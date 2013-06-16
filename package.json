@@ -1,0 +1,16 @@
+{
+  "name": "jquery.wait",
+  "description": "",
+  "version": "1.0.0",
+  "author": "kjirou",
+  "dependencies": {
+    "grunt-cli": "*"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-clean": "*"
+  }
+}
