@@ -23,3 +23,6 @@ nosetests.xml
 pip-log.txt
 sdist/
 
+
+# Project settings
+test/assets/build/
