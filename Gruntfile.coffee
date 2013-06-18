@@ -16,9 +16,9 @@ module.exports = (grunt) ->
         srcs: [
           "jquery.wait.js"
         ]
-        tests: [
+        test: [
           "node_modules/mocha/mocha.js"
-          "node_modules/expect/expect.js"
+          "node_modules/expect.js/expect.js"
           "test/assets/js/setup.js"
           "test/assets/js/tests.js"
           "test/assets/js/main.js"
@@ -28,7 +28,7 @@ module.exports = (grunt) ->
         ]
         srcs: [
         ]
-        tests: [
+        test: [
           "node_modules/mocha/mocha.css"
         ]
 
@@ -41,15 +41,20 @@ module.exports = (grunt) ->
         src: [
           "<%= constants.js.vendors %>"
           "<%= constants.js.srcs %>"
-          "<%= constants.js.tests %>"
+          "<%= constants.js.test %>"
         ]
         dest: "test/assets/build/all.js"
       test_all_css:
         src: [
           "<%= constants.css.vendors %>"
           "<%= constants.css.srcs %>"
-          "<%= constants.css.tests %>"
+          "<%= constants.css.test %>"
         ]
         dest: "test/assets/build/all.css"
+
+    watch:
+      coffee:
+        files: ["test/assets/js/**/*.js"]
+        tasks: ["clean", "concat"]
 
   grunt.registerTask "default", ["clean", "concat"]

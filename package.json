@@ -11,6 +11,6 @@
     "grunt-contrib-concat": "*",
     "grunt-contrib-watch": "*",
     "mocha": "*",
-    "expect": "*"
+    "expect.js": "*"
   }
 }
