@@ -1,9 +1,8 @@
 module.exports = (grunt) ->
 
-  # @TODO grunt-contrib 必要?
-  # @TODO test は別タスクにする
-
-  grunt.loadNpmTasks "grunt-contrib"
+  grunt.loadNpmTasks "grunt-contrib-clean"
+  grunt.loadNpmTasks "grunt-contrib-concat"
+  grunt.loadNpmTasks "grunt-contrib-watch"
 
   grunt.initConfig
 
