@@ -17,11 +17,11 @@ module.exports = (grunt) ->
         srcs: [
           "jquery.wait.js"
         ]
-        test_runners: [
+        tests: [
           "node_modules/mocha/mocha.js"
           "node_modules/expect/expect.js"
-        ]
-        tests: [
+          "test/assets/js/setup.js"
+          "test/assets/js/tests.js"
           "test/assets/js/main.js"
         ]
       css:
@@ -29,7 +29,7 @@ module.exports = (grunt) ->
         ]
         srcs: [
         ]
-        test_runners: [
+        tests: [
           "node_modules/mocha/mocha.css"
         ]
 
@@ -42,7 +42,6 @@ module.exports = (grunt) ->
         src: [
           "<%= constants.js.vendors %>"
           "<%= constants.js.srcs %>"
-          "<%= constants.js.test_runners %>"
           "<%= constants.js.tests %>"
         ]
         dest: "test/assets/build/all.js"
@@ -50,7 +49,7 @@ module.exports = (grunt) ->
         src: [
           "<%= constants.css.vendors %>"
           "<%= constants.css.srcs %>"
-          "<%= constants.css.test_runners %>"
+          "<%= constants.css.tests %>"
         ]
         dest: "test/assets/build/all.css"
 
