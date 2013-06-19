@@ -1,7 +1,7 @@
 jquery.wait
 ===========
 
-This is a very simple jQuery plugin for adding $.wait method.
+This is a very simple jQuery plugin for adding `$.wait` method.
 
 
 ## Example
@@ -45,4 +45,4 @@ $ grunt
 
 ### Testing
 
-Open `test/index.html`
+Open `test/index.html`.
