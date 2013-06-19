@@ -15,7 +15,6 @@ describe('実行', function(){
     expect(d.state()).to.be('pending');
   });
 
-  // @TODO コールバックに done が設定されていると非同期になる、仕組み要調査
   it('指定秒数待ってから次の処理を実行するか', function(done){
     var start = new Date().getTime();
     $.wait(1000).then(function(){

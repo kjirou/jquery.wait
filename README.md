@@ -26,7 +26,7 @@ MIT
 
 ### Dependencies
 - `node.js` >= 11.0
-- `grunt-cli`
+- `npm install -g grunt-cli`
 
 ### Deploy
 
@@ -40,7 +40,7 @@ $ grunt
 ### Commands
 
 - `grunt` concats all files for test.
-- `grunt watch` executes each time `grunt` at updating JavaScript files.
+- `grunt watch` executes `grunt` each time at updating JavaScript files.
 
 
 ### Testing

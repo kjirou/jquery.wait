@@ -54,7 +54,10 @@ module.exports = (grunt) ->
 
     watch:
       coffee:
-        files: ["test/assets/js/**/*.js"]
+        files: [
+          "<%= constants.js.srcs %>"
+          "test/assets/js/**/*.js"
+        ]
         tasks: ["clean", "concat"]
 
   grunt.registerTask "default", ["clean", "concat"]
